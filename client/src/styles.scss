@@ -1,0 +1,7 @@
+@use 'tailwindcss';
+
+@layer components {
+  .container {
+    @apply mx-auto px-6;
+  }
+}
