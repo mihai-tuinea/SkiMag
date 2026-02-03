@@ -5,6 +5,7 @@ import { MatBadge } from '@angular/material/badge';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatProgressBar, MatProgressBarModule } from '@angular/material/progress-bar';
 import { BusyService } from '../../core/services/busy.service';
+import { CartService } from '../../core/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -13,5 +14,6 @@ import { BusyService } from '../../core/services/busy.service';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  public busyService = inject(BusyService);
+  busyService = inject(BusyService);
+  cartService = inject(CartService);
 }
