@@ -8,7 +8,7 @@ namespace API.Controllers;
 public class CartController(ICartService cartService) : BaseApiController
 {
     [HttpGet]
-    public async Task<ActionResult<ShoppingCart>> GetCartById([FromQuery] string id)
+    public async Task<ActionResult<ShoppingCart>> GetCartById(string id)
     {
         var cart = await cartService.GetCartAsync(id);
 
@@ -20,18 +20,12 @@ public class CartController(ICartService cartService) : BaseApiController
     {
         var updatedCart = await cartService.SetCartAsync(cart);
 
-        if (updatedCart == null) return BadRequest("Problem with cart");
-
-        return updatedCart;
+        return Ok(updatedCart);
     }
 
     [HttpDelete]
-    public async Task<ActionResult> DeleteCart([FromQuery] string id)
+    public async Task DeleteCart(string id)
     {
-        var result = await cartService.DeleteCartAsync(id);
-
-        if (!result) return BadRequest("Problem deleting cart");
-
-        return Ok();
+        await cartService.DeleteCartAsync(id);
     }
 }
