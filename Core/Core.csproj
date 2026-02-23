@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Entities/" />
+    <Folder Include="Entities/OrderAggregate/" />
     <Folder Include="Interfaces/" />
     <Folder Include="Specifications/" />
   </ItemGroup>
