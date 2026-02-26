@@ -20,6 +20,7 @@
     <Folder Include="Extensions/" />
     <Folder Include="Middleware/" />
     <Folder Include="RequestHelpers/" />
+    <Folder Include="SignalR/" />
   </ItemGroup>
 
 </Project>
