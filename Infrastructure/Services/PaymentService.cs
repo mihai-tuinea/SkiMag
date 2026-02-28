@@ -54,11 +54,16 @@ public class PaymentService(IConfiguration config, ICartService cartService,
         }
         else
         {
-            var options = new PaymentIntentUpdateOptions
+            var intent = await service.GetAsync(cart.PaymentIntentId);
+
+            if (intent.Status != "succeeded")
             {
-                Amount = (long)Math.Round(total * 100),
-            };
-            await service.UpdateAsync(cart.PaymentIntentId, options);
+                var options = new PaymentIntentUpdateOptions
+                {
+                    Amount = (long)Math.Round(total * 100),
+                };
+                await service.UpdateAsync(cart.PaymentIntentId, options);
+            }
         }
     }
 

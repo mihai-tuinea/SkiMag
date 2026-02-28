@@ -66,6 +66,7 @@ try
 catch (System.Exception ex)
 {
     Console.WriteLine(ex);
+    throw;
 }
 
 app.Run();
