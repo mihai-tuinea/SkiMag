@@ -12,15 +12,7 @@ import { AdminService } from '../../../core/services/admin.service';
 
 @Component({
   selector: 'app-order-detailed',
-  imports: [
-    MatCardModule,
-    MatButton,
-    CurrencyPipe,
-    AddressPipe,
-    PaymentCardPipe,
-    DatePipe,
-    RouterLink,
-  ],
+  imports: [MatCardModule, MatButton, CurrencyPipe, AddressPipe, PaymentCardPipe, DatePipe],
   templateUrl: './order-detailed.component.html',
   styleUrl: './order-detailed.component.scss',
 })
