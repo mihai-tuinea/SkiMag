@@ -40,9 +40,12 @@ export class AccountService {
   }
 
   logout() {
-    return this.http
-      .post(this.baseUrl + 'account/logout', {})
-      .pipe(tap(() => this.signalrService.stopHubConnection()));
+    return this.http.post(this.baseUrl + 'account/logout', {}).pipe(
+      tap(() => {
+        localStorage.removeItem('cart_id');
+        this.signalrService.stopHubConnection();
+      }),
+    );
   }
 
   updateAddress(address: Address) {

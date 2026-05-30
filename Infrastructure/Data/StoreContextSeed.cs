@@ -22,6 +22,18 @@ public class StoreContextSeed
             await userManager.AddToRoleAsync(user, "Admin");
         }
 
+        if (!userManager.Users.Any(x => x.UserName == "tom@test.com"))
+        {
+            var user = new AppUser()
+            {
+                UserName = "tom@test.com",
+                Email = "tom@test.com",
+            };
+
+            await userManager.CreateAsync(user, "Pa$$w0rd");
+            await userManager.AddToRoleAsync(user, "Customer");
+        }
+
         var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         if (!context.Products.Any())

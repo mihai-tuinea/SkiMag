@@ -1,164 +1,362 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureUrl": "/images/products/sb-ang1.png",
-    "Type": "Boards",
-    "Brand": "Angular",
-    "QuantityInStock": 82
+    "Name": "Cască Alpina 1",
+    "Description": "Echipament de calitate superioară pentru sporturi de iarnă.",
+    "Price": 350,
+    "PictureUrl": "/images/products/casca-alpina-1.png",
+    "Type": "Căști",
+    "Brand": "Alpina",
+    "QuantityInStock": 42
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
-    "PictureUrl": "/images/products/sb-ang2.png",
-    "Type": "Boards",
-    "Brand": "Angular",
-    "QuantityInStock": 75
+    "Name": "Cască Alpina 2",
+    "Description": "Echipament de calitate superioară pentru sporturi de iarnă.",
+    "Price": 360,
+    "PictureUrl": "/images/products/casca-alpina-2.png",
+    "Type": "Căști",
+    "Brand": "Alpina",
+    "QuantityInStock": 15
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "/images/products/sb-core1.png",
-    "Type": "Boards",
-    "Brand": "NetCore",
-    "QuantityInStock": 3
-  },
-  {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
-    "PictureUrl": "/images/products/sb-core2.png",
-    "Type": "Boards",
-    "Brand": "NetCore",
-    "QuantityInStock": 52
-  },
-  {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureUrl": "/images/products/sb-react1.png",
-    "Type": "Boards",
-    "Brand": "React",
-    "QuantityInStock": 97
-  },
-  {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureUrl": "/images/products/sb-ts1.png",
-    "Type": "Boards",
-    "Brand": "Typescript",
-    "QuantityInStock": 37
-  },
-  {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureUrl": "/images/products/hat-core1.png",
-    "Type": "Hats",
-    "Brand": "NetCore",
-    "QuantityInStock": 32
-  },
-  {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureUrl": "/images/products/hat-react1.png",
-    "Type": "Hats",
-    "Brand": "React",
-    "QuantityInStock": 6
-  },
-  {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureUrl": "/images/products/hat-react2.png",
-    "Type": "Hats",
-    "Brand": "React",
-    "QuantityInStock": 17
-  },
-  {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureUrl": "/images/products/glove-code1.png",
-    "Type": "Gloves",
-    "Brand": "VS Code",
-    "QuantityInStock": 74
-  },
-  {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureUrl": "/images/products/glove-code2.png",
-    "Type": "Gloves",
-    "Brand": "VS Code",
-    "QuantityInStock": 19
-  },
-  {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureUrl": "/images/products/glove-react1.png",
-    "Type": "Gloves",
-    "Brand": "React",
-    "QuantityInStock": 77
-  },
-  {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureUrl": "/images/products/glove-react2.png",
-    "Type": "Gloves",
-    "Brand": "React",
-    "QuantityInStock": 45
-  },
-  {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureUrl": "/images/products/boot-redis1.png",
-    "Type": "Boots",
-    "Brand": "Redis",
-    "QuantityInStock": 49
-  },
-  {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureUrl": "/images/products/boot-core2.png",
-    "Type": "Boots",
-    "Brand": "NetCore",
+    "Name": "Cască Alpina 3",
+    "Description": "Echipament de calitate superioară pentru sporturi de iarnă.",
+    "Price": 340,
+    "PictureUrl": "/images/products/casca-alpina-3.png",
+    "Type": "Căști",
+    "Brand": "Alpina",
     "QuantityInStock": 28
   },
   {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureUrl": "/images/products/boot-core1.png",
-    "Type": "Boots",
-    "Brand": "NetCore",
-    "QuantityInStock": 69
+    "Name": "Cască Alpina 4",
+    "Description": "Echipament de calitate superioară pentru sporturi de iarnă.",
+    "Price": 380,
+    "PictureUrl": "/images/products/casca-alpina-4.png",
+    "Type": "Căști",
+    "Brand": "Alpina",
+    "QuantityInStock": 10
   },
   {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 150,
-    "PictureUrl": "/images/products/boot-ang2.png",
-    "Type": "Boots",
-    "Brand": "Angular",
+    "Name": "Cască Alpina 5",
+    "Description": "Echipament de calitate superioară pentru sporturi de iarnă.",
+    "Price": 390,
+    "PictureUrl": "/images/products/casca-alpina-5.png",
+    "Type": "Căști",
+    "Brand": "Alpina",
+    "QuantityInStock": 5
+  },
+  {
+    "Name": "Cască Rossignol 1",
+    "Description": "Design aerodinamic și protecție maximă pe pârtie.",
+    "Price": 420,
+    "PictureUrl": "/images/products/casca-rossignol-1.png",
+    "Type": "Căști",
+    "Brand": "Rossignol",
+    "QuantityInStock": 33
+  },
+  {
+    "Name": "Cască Rossignol 2",
+    "Description": "Design aerodinamic și protecție maximă pe pârtie.",
+    "Price": 430,
+    "PictureUrl": "/images/products/casca-rossignol-2.png",
+    "Type": "Căști",
+    "Brand": "Rossignol",
+    "QuantityInStock": 12
+  },
+  {
+    "Name": "Cască Rossignol 3",
+    "Description": "Design aerodinamic și protecție maximă pe pârtie.",
+    "Price": 410,
+    "PictureUrl": "/images/products/casca-rossignol-3.png",
+    "Type": "Căști",
+    "Brand": "Rossignol",
+    "QuantityInStock": 25
+  },
+  {
+    "Name": "Cască Rossignol 4",
+    "Description": "Design aerodinamic și protecție maximă pe pârtie.",
+    "Price": 450,
+    "PictureUrl": "/images/products/casca-rossignol-4.png",
+    "Type": "Căști",
+    "Brand": "Rossignol",
+    "QuantityInStock": 18
+  },
+  {
+    "Name": "Cască Rossignol 5",
+    "Description": "Design aerodinamic și protecție maximă pe pârtie.",
+    "Price": 460,
+    "PictureUrl": "/images/products/casca-rossignol-5.png",
+    "Type": "Căști",
+    "Brand": "Rossignol",
+    "QuantityInStock": 8
+  },
+  {
+    "Name": "Geacă Rossignol 1",
+    "Description": "Confort termic excelent și impermeabilitate ridicată.",
+    "Price": 850,
+    "PictureUrl": "/images/products/geaca-rossignol-1.png",
+    "Type": "Geci",
+    "Brand": "Rossignol",
+    "QuantityInStock": 21
+  },
+  {
+    "Name": "Geacă Rossignol 2",
+    "Description": "Confort termic excelent și impermeabilitate ridicată.",
+    "Price": 890,
+    "PictureUrl": "/images/products/geaca-rossignol-2.png",
+    "Type": "Geci",
+    "Brand": "Rossignol",
+    "QuantityInStock": 14
+  },
+  {
+    "Name": "Geacă Rossignol 3",
+    "Description": "Confort termic excelent și impermeabilitate ridicată.",
+    "Price": 820,
+    "PictureUrl": "/images/products/geaca-rossignol-3.png",
+    "Type": "Geci",
+    "Brand": "Rossignol",
+    "QuantityInStock": 30
+  },
+  {
+    "Name": "Geacă Rossignol 4",
+    "Description": "Confort termic excelent și impermeabilitate ridicată.",
+    "Price": 910,
+    "PictureUrl": "/images/products/geaca-rossignol-4.png",
+    "Type": "Geci",
+    "Brand": "Rossignol",
+    "QuantityInStock": 11
+  },
+  {
+    "Name": "Geacă Rossignol 5",
+    "Description": "Confort termic excelent și impermeabilitate ridicată.",
+    "Price": 950,
+    "PictureUrl": "/images/products/geaca-rossignol-5.png",
+    "Type": "Geci",
+    "Brand": "Rossignol",
+    "QuantityInStock": 7
+  },
+  {
+    "Name": "Geacă Siroko 1",
+    "Description": "Material respirabil, perfectă pentru zilele active în zăpadă.",
+    "Price": 650,
+    "PictureUrl": "/images/products/geaca-siroko-1.png",
+    "Type": "Geci",
+    "Brand": "Siroko",
+    "QuantityInStock": 40
+  },
+  {
+    "Name": "Geacă Siroko 2",
+    "Description": "Material respirabil, perfectă pentru zilele active în zăpadă.",
+    "Price": 670,
+    "PictureUrl": "/images/products/geaca-siroko-2.png",
+    "Type": "Geci",
+    "Brand": "Siroko",
+    "QuantityInStock": 22
+  },
+  {
+    "Name": "Geacă Siroko 3",
+    "Description": "Material respirabil, perfectă pentru zilele active în zăpadă.",
+    "Price": 640,
+    "PictureUrl": "/images/products/geaca-siroko-3.png",
+    "Type": "Geci",
+    "Brand": "Siroko",
     "QuantityInStock": 35
   },
   {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Name": "Geacă Siroko 4",
+    "Description": "Material respirabil, perfectă pentru zilele active în zăpadă.",
+    "Price": 690,
+    "PictureUrl": "/images/products/geaca-siroko-4.png",
+    "Type": "Geci",
+    "Brand": "Siroko",
+    "QuantityInStock": 19
+  },
+  {
+    "Name": "Geacă Siroko 5",
+    "Description": "Material respirabil, perfectă pentru zilele active în zăpadă.",
+    "Price": 710,
+    "PictureUrl": "/images/products/geaca-siroko-5.png",
+    "Type": "Geci",
+    "Brand": "Siroko",
+    "QuantityInStock": 9
+  },
+  {
+    "Name": "Mănuși Rossignol 1",
+    "Description": "Izolație termică premium pentru mâini calde toată ziua.",
     "Price": 180,
-    "PictureUrl": "/images/products/boot-ang1.png",
-    "Type": "Boots",
-    "Brand": "Angular",
-    "QuantityInStock": 27
+    "PictureUrl": "/images/products/manusi-rossignol-1.png",
+    "Type": "Mănuși",
+    "Brand": "Rossignol",
+    "QuantityInStock": 55
+  },
+  {
+    "Name": "Mănuși Rossignol 2",
+    "Description": "Izolație termică premium pentru mâini calde toată ziua.",
+    "Price": 190,
+    "PictureUrl": "/images/products/manusi-rossignol-2.png",
+    "Type": "Mănuși",
+    "Brand": "Rossignol",
+    "QuantityInStock": 48
+  },
+  {
+    "Name": "Mănuși Rossignol 3",
+    "Description": "Izolație termică premium pentru mâini calde toată ziua.",
+    "Price": 175,
+    "PictureUrl": "/images/products/manusi-rossignol-3.png",
+    "Type": "Mănuși",
+    "Brand": "Rossignol",
+    "QuantityInStock": 60
+  },
+  {
+    "Name": "Mănuși Rossignol 4",
+    "Description": "Izolație termică premium pentru mâini calde toată ziua.",
+    "Price": 210,
+    "PictureUrl": "/images/products/manusi-rossignol-4.png",
+    "Type": "Mănuși",
+    "Brand": "Rossignol",
+    "QuantityInStock": 25
+  },
+  {
+    "Name": "Mănuși Rossignol 5",
+    "Description": "Izolație termică premium pentru mâini calde toată ziua.",
+    "Price": 220,
+    "PictureUrl": "/images/products/manusi-rossignol-5.png",
+    "Type": "Mănuși",
+    "Brand": "Rossignol",
+    "QuantityInStock": 15
+  },
+  {
+    "Name": "Mănuși Viking 1",
+    "Description": "Design ergonomic, rezistență la vânt și umezeală.",
+    "Price": 150,
+    "PictureUrl": "/images/products/manusi-viking-1.png",
+    "Type": "Mănuși",
+    "Brand": "Viking",
+    "QuantityInStock": 70
+  },
+  {
+    "Name": "Mănuși Viking 2",
+    "Description": "Design ergonomic, rezistență la vânt și umezeală.",
+    "Price": 160,
+    "PictureUrl": "/images/products/manusi-viking-2.png",
+    "Type": "Mănuși",
+    "Brand": "Viking",
+    "QuantityInStock": 65
+  },
+  {
+    "Name": "Mănuși Viking 3",
+    "Description": "Design ergonomic, rezistență la vânt și umezeală.",
+    "Price": 145,
+    "PictureUrl": "/images/products/manusi-viking-3.png",
+    "Type": "Mănuși",
+    "Brand": "Viking",
+    "QuantityInStock": 80
+  },
+  {
+    "Name": "Mănuși Viking 4",
+    "Description": "Design ergonomic, rezistență la vânt și umezeală.",
+    "Price": 170,
+    "PictureUrl": "/images/products/manusi-viking-4.png",
+    "Type": "Mănuși",
+    "Brand": "Viking",
+    "QuantityInStock": 40
+  },
+  {
+    "Name": "Mănuși Viking 5",
+    "Description": "Design ergonomic, rezistență la vânt și umezeală.",
+    "Price": 185,
+    "PictureUrl": "/images/products/manusi-viking-5.png",
+    "Type": "Mănuși",
+    "Brand": "Viking",
+    "QuantityInStock": 30
+  },
+  {
+    "Name": "Pantaloni Fischer 1",
+    "Description": "Flexibilitate și izolație optimă pentru performanță pe skiuri.",
+    "Price": 550,
+    "PictureUrl": "/images/products/pantaloni-fischer-1.png",
+    "Type": "Pantaloni",
+    "Brand": "Fischer",
+    "QuantityInStock": 38
+  },
+  {
+    "Name": "Pantaloni Fischer 2",
+    "Description": "Flexibilitate și izolație optimă pentru performanță pe skiuri.",
+    "Price": 570,
+    "PictureUrl": "/images/products/pantaloni-fischer-2.png",
+    "Type": "Pantaloni",
+    "Brand": "Fischer",
+    "QuantityInStock": 26
+  },
+  {
+    "Name": "Pantaloni Fischer 3",
+    "Description": "Flexibilitate și izolație optimă pentru performanță pe skiuri.",
+    "Price": 530,
+    "PictureUrl": "/images/products/pantaloni-fischer-3.png",
+    "Type": "Pantaloni",
+    "Brand": "Fischer",
+    "QuantityInStock": 45
+  },
+  {
+    "Name": "Pantaloni Fischer 4",
+    "Description": "Flexibilitate și izolație optimă pentru performanță pe skiuri.",
+    "Price": 600,
+    "PictureUrl": "/images/products/pantaloni-fischer-4.png",
+    "Type": "Pantaloni",
+    "Brand": "Fischer",
+    "QuantityInStock": 18
+  },
+  {
+    "Name": "Pantaloni Fischer 5",
+    "Description": "Flexibilitate și izolație optimă pentru performanță pe skiuri.",
+    "Price": 620,
+    "PictureUrl": "/images/products/pantaloni-fischer-5.png",
+    "Type": "Pantaloni",
+    "Brand": "Fischer",
+    "QuantityInStock": 12
+  },
+  {
+    "Name": "Pantaloni Siroko 1",
+    "Description": "Pantaloni de iarnă ușori și durabili, ideali pentru snowboarding.",
+    "Price": 480,
+    "PictureUrl": "/images/products/pantaloni-siroko-1.png",
+    "Type": "Pantaloni",
+    "Brand": "Siroko",
+    "QuantityInStock": 50
+  },
+  {
+    "Name": "Pantaloni Siroko 2",
+    "Description": "Pantaloni de iarnă ușori și durabili, ideali pentru snowboarding.",
+    "Price": 495,
+    "PictureUrl": "/images/products/pantaloni-siroko-2.png",
+    "Type": "Pantaloni",
+    "Brand": "Siroko",
+    "QuantityInStock": 35
+  },
+  {
+    "Name": "Pantaloni Siroko 3",
+    "Description": "Pantaloni de iarnă ușori și durabili, ideali pentru snowboarding.",
+    "Price": 460,
+    "PictureUrl": "/images/products/pantaloni-siroko-3.png",
+    "Type": "Pantaloni",
+    "Brand": "Siroko",
+    "QuantityInStock": 60
+  },
+  {
+    "Name": "Pantaloni Siroko 4",
+    "Description": "Pantaloni de iarnă ușori și durabili, ideali pentru snowboarding.",
+    "Price": 520,
+    "PictureUrl": "/images/products/pantaloni-siroko-4.png",
+    "Type": "Pantaloni",
+    "Brand": "Siroko",
+    "QuantityInStock": 22
+  },
+  {
+    "Name": "Pantaloni Siroko 5",
+    "Description": "Pantaloni de iarnă ușori și durabili, ideali pentru snowboarding.",
+    "Price": 540,
+    "PictureUrl": "/images/products/pantaloni-siroko-5.png",
+    "Type": "Pantaloni",
+    "Brand": "Siroko",
+    "QuantityInStock": 14
   }
 ]

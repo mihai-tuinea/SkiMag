@@ -15,7 +15,7 @@
   );
   @include mat.badge-overrides(
     (
-      background-color: blue,
+      background-color: #FF6B00,
     )
   );
 }
@@ -52,8 +52,8 @@ html {
   @include mat.theme(
     (
       color: (
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
+        primary: mat.$blue-palette,
+        tertiary: mat.$orange-palette,
       ),
       typography: Roboto,
       density: 0,
