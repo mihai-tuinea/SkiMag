@@ -4,6 +4,8 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { OrderParams } from '../../shared/models/orderParams';
 import { Pagination } from '../../shared/models/pagination';
 import { Order } from '../../shared/models/order';
+import { Product } from '../../shared/models/product';
+import { ShopParams } from '../../shared/models/shopParams';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +13,26 @@ import { Order } from '../../shared/models/order';
 export class AdminService {
   baseUrl = environment.apiUrl;
   private http = inject(HttpClient);
+
+  getProducts(shopParams: ShopParams) {
+    let params = new HttpParams();
+    if (shopParams.search) params = params.append('search', shopParams.search);
+    params = params.append('pageSize', shopParams.pageSize);
+    params = params.append('pageIndex', shopParams.pageNumber);
+    return this.http.get<Pagination<Product>>(this.baseUrl + 'products', { params });
+  }
+
+  createProduct(product: Partial<Product>) {
+    return this.http.post<Product>(this.baseUrl + 'products', product);
+  }
+
+  updateProduct(id: number, product: Product) {
+    return this.http.put<void>(this.baseUrl + 'products/' + id, product);
+  }
+
+  deleteProduct(id: number) {
+    return this.http.delete<void>(this.baseUrl + 'products/' + id);
+  }
 
   getOrders(orderParams: OrderParams) {
     let params = new HttpParams();
