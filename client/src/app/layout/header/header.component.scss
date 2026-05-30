@@ -11,8 +11,34 @@
   height: 32px;
 }
 
-a {
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF6B00;
+    transition: width 0.25s ease;
+  }
+
+  &:hover {
+    color: white;
+    &::after { width: 100%; }
+  }
+
   &.active {
-    color: #FF6B00;
+    color: white;
+    &::after { width: 100%; }
   }
 }

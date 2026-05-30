@@ -1,19 +1,19 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { Product } from '../../shared/models/product';
 import { ShopService } from '../../core/services/shop.service';
-import { MatCard, MatCardModule } from '@angular/material/card';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { FiltersDialogComponent } from './filters-dialog/filters-dialog.component';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { MatMenu, MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
+import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
 import { MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list';
 import { ShopParams } from '../../shared/models/shopParams';
-import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { Pagination } from '../../shared/models/pagination';
 import { FormsModule } from '@angular/forms';
 import { EmptyStateComponent } from '../../shared/components/empty-state/empty-state.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -36,6 +36,7 @@ import { EmptyStateComponent } from '../../shared/components/empty-state/empty-s
 export class ShopComponent implements OnInit {
   protected shopService = inject(ShopService);
   private dialogService = inject(MatDialog);
+  private route = inject(ActivatedRoute);
   products?: Pagination<Product>;
   sortOptions = [
     { name: 'Alphabetical', value: 'name' },
@@ -46,6 +47,10 @@ export class ShopComponent implements OnInit {
   pageSizeOptions = [5, 10, 15, 20];
 
   ngOnInit(): void {
+    const typeParam = this.route.snapshot.queryParamMap.get('types');
+    if (typeParam) {
+      this.shopParams.types = [typeParam];
+    }
     this.initializeShop();
   }
 
