@@ -11,7 +11,7 @@
             {{ product.name }}
           </h1>
 
-          <p>You have {{ quantityInCart }} of this item in your cart</p>
+          <p>Ai {{ quantityInCart }} din acest produs în coș</p>
 
           <div class="mt-4 items-center gap-4 flex">
             <p class="text-3xl font-extrabold text-gray-900">
@@ -31,7 +31,7 @@
             </button>
 
             <mat-form-field appearance="outline" class="flex flex-row">
-              <mat-label>Quantity</mat-label>
+              <mat-label>Cantitate</mat-label>
               <input matInput min="0" type="number" [(ngModel)]="quantity" type="number" />
             </mat-form-field>
           </div>

@@ -1,37 +1,37 @@
-<h2 mat-dialog-title>{{ isEdit ? 'Edit Product' : 'Add Product' }}</h2>
+<h2 mat-dialog-title>{{ isEdit ? 'Editează produsul' : 'Adaugă produs' }}</h2>
 
 <mat-dialog-content>
   <form [formGroup]="form" class="flex flex-col gap-3 pt-2">
     <mat-form-field appearance="outline">
-      <mat-label>Name</mat-label>
+      <mat-label>Nume</mat-label>
       <input matInput formControlName="name" />
       @if (form.controls.name.hasError('required')) {
-        <mat-error>Name is required</mat-error>
+        <mat-error>Numele este obligatoriu</mat-error>
       }
     </mat-form-field>
 
     <mat-form-field appearance="outline">
-      <mat-label>Description</mat-label>
+      <mat-label>Descriere</mat-label>
       <textarea matInput formControlName="description" rows="3"></textarea>
       @if (form.controls.description.hasError('required')) {
-        <mat-error>Description is required</mat-error>
+        <mat-error>Descrierea este obligatorie</mat-error>
       }
     </mat-form-field>
 
     <div class="flex gap-3">
       <mat-form-field appearance="outline" class="flex-1">
-        <mat-label>Price</mat-label>
+        <mat-label>Preț</mat-label>
         <input matInput type="number" formControlName="price" step="0.01" />
         @if (form.controls.price.hasError('required') || form.controls.price.hasError('min')) {
-          <mat-error>Price must be greater than 0</mat-error>
+          <mat-error>Prețul trebuie să fie mai mare ca 0</mat-error>
         }
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="flex-1">
-        <mat-label>Quantity in Stock</mat-label>
+        <mat-label>Cantitate în stoc</mat-label>
         <input matInput type="number" formControlName="quantityInStock" />
         @if (form.controls.quantityInStock.hasError('min')) {
-          <mat-error>Quantity cannot be negative</mat-error>
+          <mat-error>Cantitatea nu poate fi negativă</mat-error>
         }
       </mat-form-field>
     </div>
@@ -41,29 +41,29 @@
         <mat-label>Brand</mat-label>
         <input matInput formControlName="brand" />
         @if (form.controls.brand.hasError('required')) {
-          <mat-error>Brand is required</mat-error>
+          <mat-error>Brandul este obligatoriu</mat-error>
         }
       </mat-form-field>
 
       <mat-form-field appearance="outline" class="flex-1">
-        <mat-label>Type</mat-label>
+        <mat-label>Tip</mat-label>
         <input matInput formControlName="type" />
         @if (form.controls.type.hasError('required')) {
-          <mat-error>Type is required</mat-error>
+          <mat-error>Tipul este obligatoriu</mat-error>
         }
       </mat-form-field>
     </div>
 
     <mat-form-field appearance="outline">
-      <mat-label>Picture URL (optional)</mat-label>
+      <mat-label>URL imagine (opțional)</mat-label>
       <input matInput formControlName="pictureUrl" />
     </mat-form-field>
   </form>
 </mat-dialog-content>
 
 <mat-dialog-actions align="end">
-  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onCancel()">Anulează</button>
   <button mat-flat-button color="primary" (click)="onSubmit()" [disabled]="form.invalid">
-    {{ isEdit ? 'Save Changes' : 'Create Product' }}
+    {{ isEdit ? 'Salvează modificările' : 'Creează produsul' }}
   </button>
 </mat-dialog-actions>

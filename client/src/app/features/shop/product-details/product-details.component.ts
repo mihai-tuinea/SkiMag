@@ -72,6 +72,6 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   getButtonText() {
-    return this.quantityInCart > 0 ? 'Update Cart' : 'Add to Cart';
+    return this.quantityInCart > 0 ? 'Actualizează coșul' : 'Adaugă în coș';
   }
 }

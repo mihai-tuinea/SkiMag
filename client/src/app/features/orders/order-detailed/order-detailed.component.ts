@@ -23,7 +23,7 @@ export class OrderDetailedComponent implements OnInit {
   private adminService = inject(AdminService);
   private router = inject(Router);
   order?: Order;
-  buttonText = this.accountService.isAdmin() ? 'Return to admin' : 'Return to orders';
+  buttonText = this.accountService.isAdmin() ? 'Înapoi la admin' : 'Înapoi la comenzi';
 
   ngOnInit(): void {
     this.loadOrder();

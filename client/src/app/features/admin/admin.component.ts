@@ -94,8 +94,8 @@ export class AdminComponent implements OnInit {
 
   async openConfirmDialog(id: number) {
     const confirmed = await this.dialogService.confirm(
-      'Confirm refund',
-      'Are you sure you want to issue this refund? This cannot be undone.',
+      'Confirmă rambursarea',
+      'Ești sigur că vrei să emiți această rambursare? Acțiunea nu poate fi anulată.',
     );
 
     if (confirmed) this.refundOrder(id);
@@ -143,10 +143,10 @@ export class AdminComponent implements OnInit {
       if (!result) return;
       this.adminService.createProduct(result).subscribe({
         next: () => {
-          this.snackbar.success('Product created successfully');
+          this.snackbar.success('Produs creat cu succes');
           this.loadProducts();
         },
-        error: () => this.snackbar.error('Failed to create product'),
+        error: () => this.snackbar.error('Eroare la crearea produsului'),
       });
     });
   }
@@ -164,17 +164,17 @@ export class AdminComponent implements OnInit {
           this.productDataSource.data = this.productDataSource.data.map((p) =>
             p.id === product.id ? { ...product, ...result } : p,
           );
-          this.snackbar.success('Product updated successfully');
+          this.snackbar.success('Produs actualizat cu succes');
         },
-        error: () => this.snackbar.error('Failed to update product'),
+        error: () => this.snackbar.error('Eroare la actualizarea produsului'),
       });
     });
   }
 
   async openDeleteProduct(id: number) {
     const confirmed = await this.dialogService.confirm(
-      'Delete Product',
-      'Are you sure you want to delete this product? This cannot be undone.',
+      'Șterge produsul',
+      'Ești sigur că vrei să ștergi acest produs? Acțiunea nu poate fi anulată.',
     );
 
     if (!confirmed) return;
@@ -183,9 +183,9 @@ export class AdminComponent implements OnInit {
       next: () => {
         this.productDataSource.data = this.productDataSource.data.filter((p) => p.id !== id);
         this.totalProducts--;
-        this.snackbar.success('Product deleted');
+        this.snackbar.success('Produs șters');
       },
-      error: () => this.snackbar.error('Failed to delete product'),
+      error: () => this.snackbar.error('Eroare la ștergerea produsului'),
     });
   }
 }

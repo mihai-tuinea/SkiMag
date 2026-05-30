@@ -39,9 +39,9 @@ export class ShopComponent implements OnInit {
   private route = inject(ActivatedRoute);
   products?: Pagination<Product>;
   sortOptions = [
-    { name: 'Alphabetical', value: 'name' },
-    { name: 'Price: Low-High', value: 'priceAsc' },
-    { name: 'Price: High-Low', value: 'priceDesc' },
+    { name: 'Alfabetic', value: 'name' },
+    { name: 'Preț: Crescător', value: 'priceAsc' },
+    { name: 'Preț: Descrescător', value: 'priceDesc' },
   ];
   shopParams = new ShopParams();
   pageSizeOptions = [5, 10, 15, 20];

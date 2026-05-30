@@ -4,9 +4,9 @@
     <img routerLink="/" src="/images/logo.png" alt="SkiMag" class="h-12 cursor-pointer" />
 
     <nav class="flex gap-8 items-center">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a>
-      <a routerLink="/shop" routerLinkActive="active" class="nav-link">Shop</a>
-      <a routerLink="/test-error" routerLinkActive="active" class="nav-link">Errors</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Acasă</a>
+      <a routerLink="/shop" routerLinkActive="active" class="nav-link">Magazin</a>
+      <a routerLink="/test-error" routerLinkActive="active" class="nav-link">Erori</a>
       <a *appIsAdmin routerLink="/admin" routerLinkActive="active" class="nav-link">Admin</a>
     </nav>
 
@@ -28,8 +28,8 @@
           <mat-icon>arrow_drop_down</mat-icon>
         </button>
       } @else {
-        <button routerLink="/account/login" mat-stroked-button class="text-white! border-white/50! hover:border-white!">Login</button>
-        <button routerLink="/account/register" mat-flat-button class="bg-[#FF6B00]! text-white! hover:bg-[#e56000]!">Register</button>
+        <button routerLink="/account/login" mat-stroked-button class="text-white! border-white/50! hover:border-white!">Conectare</button>
+        <button routerLink="/account/register" mat-flat-button class="bg-[#FF6B00]! text-white! hover:bg-[#e56000]!">Înregistrare</button>
       }
     </div>
   </div>
@@ -42,15 +42,15 @@
 <mat-menu #menu="matMenu">
   <button mat-menu-item routerLink="/cart">
     <mat-icon>shopping_cart</mat-icon>
-    My cart
+    Coșul meu
   </button>
   <button mat-menu-item routerLink="/orders">
     <mat-icon>history</mat-icon>
-    My orders
+    Comenzile mele
   </button>
   <mat-divider></mat-divider>
   <button mat-menu-item (click)="logout()">
     <mat-icon>logout</mat-icon>
-    Logout
+    Deconectare
   </button>
 </mat-menu>

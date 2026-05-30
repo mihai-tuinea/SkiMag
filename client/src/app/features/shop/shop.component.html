@@ -19,7 +19,7 @@
         <input
           type="search"
           class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg"
-          placeholder="Search"
+          placeholder="Caută"
           name="search"
           [(ngModel)]="shopParams.search"
         />
@@ -35,12 +35,12 @@
       <div class="flex gap-3">
         <button mat-stroked-button (click)="openFiltersDialog()" class="match-input-height">
           <mat-icon>filter_list</mat-icon>
-          Filters
+          Filtre
         </button>
 
         <button mat-stroked-button [matMenuTriggerFor]="sortMenu" class="match-input-height">
           <mat-icon>swap_vert</mat-icon>
-          Sort
+          Sortare
         </button>
       </div>
     </div>
@@ -63,9 +63,9 @@
   </mat-menu>
 } @else {
   <app-empty-state
-    message="No products match this filter"
+    message="Niciun produs nu corespunde filtrului"
     icon="filter_alt_off"
-    actionText="Reset Filters"
+    actionText="Resetează filtrele"
     (action)="resetFilters()"
   />
 }
